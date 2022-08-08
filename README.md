@@ -25,6 +25,7 @@
 
 - CSS custom properties
 - Flexbox
+- Grid
 - Mobile-first workflow
 
 ### What I learned
