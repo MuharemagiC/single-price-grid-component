@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #E6EFF5;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card-grid {
+    display: grid;
+    width: 635px;
+    height: 475px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    border-radius: 8px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+
+.item-one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 40px;
+}
+
+.item-one__title {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    max-width: 325px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: #2AB3B1;
+    margin-bottom: 24px;
+}
+
+.item-one__subtitle {
+    margin: 0;
+    max-width: 367px;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+    color: #C0DF33;
+    margin-bottom: 11px;
+}
+
+.item-one__text {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #9AA7BE;
+    max-width: 555px;
+}
+
+.item-two {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background: #2AB3B1;
+    padding: 40px;
+}
+
+.item-two__subtitle {
+    margin: 0;
+    max-width: 182px;
+    margin-bottom: 18px;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+    color: #FFFFFF;
+}
+
+.item-two__text-wrapper {
+    margin: 0;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.item-two__text-wrapper__price {
+    margin: 0;
+    max-width: 61px;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    margin-right: 11px;
+}
+
+.item-two__text-wrapper__month {
+    margin: 0;
+    max-width: 76px;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.item-two__text {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 238px;
+    margin-bottom: 26px;
+}
+
+.item-two__button {
+    height: 48px;
+    margin: 0;
+    background: #C0DF33;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.item-two__button:hover {
+    cursor: pointer;
+}
+
+.item-three {
+    display: flex;
+    flex-direction: column;
+    background: #4ABFBD;
+    padding: 40px;
+    margin: 0;
+}
+
+.item-three__subtitle {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.item-three__text {
+    margin: 0;
+    max-width: 238px;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.175px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+@media (max-width: 650px) {
+    .card-grid {
+        width: 311px;
+        min-height: 722px;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .item-one {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .item-three__text {
+        max-width: 170px;
+    }
+
+    .item-one, .item-two, .item-three {
+        padding: 28px 24px;
+    }
+}
